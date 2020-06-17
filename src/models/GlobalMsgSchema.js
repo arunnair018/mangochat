@@ -31,7 +31,7 @@ GlobalMessageSchema.pre("save", async function (next) {
     date.getFullYear();
 
   msg.time =
-    ('0'+current_date.getHours()).slice(-2) + ":" + ('0'+date.getMinutes()).slice(-2) + ":" + date.getSeconds();
+    ('0'+date.getHours()).slice(-2) + ":" + ('0'+date.getMinutes()).slice(-2) + ":" + date.getSeconds();
 
   next(); // call the next middleware
 });
