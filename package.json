@@ -1,0 +1,41 @@
+{
+  "name": "mangochat",
+  "version": "1.0.0",
+  "description": "chat app using socket.io",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd client && npm run build",
+    "install-client": "cd client && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build",
+    "start": "node server.js",
+    "client": "cd client && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arunnair018/nutrify.me.git"
+  },
+  "author": "Arun Nair",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arunnair018/nutrify.me/issues"
+  },
+  "homepage": "https://github.com/arunnair018/nutrify.me#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.5.6",
+    "mongoose": "^5.9.10",
+    "request": "^2.88.2",
+    "socket.io": "^2.3.0",
+    "validator": "^13.0.0"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "nodemon": "^2.0.3"
+  }
+}
