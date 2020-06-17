@@ -47,7 +47,7 @@ io.on("connection", (socket) => {
 // MongoDB Database configuration
 const db_username = process.env.MONGOUSER;
 const db_password = process.env.MONGOPASS;
-const url = `mongodb+srv://${db_username}:${db_password}@cluster0-d435h.mongodb.net/test?retryWrites=true&w=majority`;
+const url = `mongodb+srv://${db_username}:${db_password}@cluster0-d435h.mongodb.net/mangochat?retryWrites=true&w=majority`;
 mongoose
   .connect(url, {
     useNewUrlParser: true,
