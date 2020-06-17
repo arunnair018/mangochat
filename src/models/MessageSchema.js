@@ -43,7 +43,7 @@ MessageSchema.pre("save", async function (next) {
     date.getFullYear();
 
   msg.time =
-    date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+    date.getHours() + ":" + ('0'+date.getMinutes()).slice(-2) + ":" + date.getSeconds();
 
   next(); // call the next middleware
 });
