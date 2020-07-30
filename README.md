@@ -1,3 +1,3 @@
 # mangochat
 
-A chat webapp using socket.io
+A Real-time messaging webapp using socket.io
